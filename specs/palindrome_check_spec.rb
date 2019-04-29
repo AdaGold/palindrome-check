@@ -1,6 +1,6 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/palindrome_check'
+require "minitest/autorun"
+require "minitest/reporters"
+require_relative "../lib/palindrome_check"
 
 describe "palindrome" do
   describe "basic tests" do
