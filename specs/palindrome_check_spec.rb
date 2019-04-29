@@ -62,5 +62,17 @@ describe "palindrome" do
 
       palindrome_check(test_string).must_equal true
     end
+
+    it "palindrome with spaces at the start is a palindrome" do
+      test_string = "   taco cat"
+
+      palindrome_check(test_string).must_equal true
+    end
+
+    it "palindrome with spaces at the end is a palindrome" do
+      test_string = "taco cat   "
+
+      palindrome_check(test_string).must_equal true
+    end
   end
 end
