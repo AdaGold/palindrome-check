@@ -31,6 +31,11 @@ describe "palindrome" do
 
       palindrome_check(test_string).must_equal true
     end
+    
+    it "works for strings with leading space" do
+      test_string = "   atoyota   "
+      expect(palindrome_check(test_string)).must_equal true
+    end
 
     # if the parameter is an object, check for nil
     it "nil object is not a string" do
