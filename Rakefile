@@ -1,9 +1,16 @@
-require 'rake/testtask'
+number = int(input("Please Enter any Number: "))
 
-Rake::TestTask.new do |t|
-  t.libs = ["lib"]
-  t.warning = true
-  t.test_files = FileList['test/*_test.rb']
-end
+reverse = 0
+temp = number
 
-task default: :test
+while(temp > 0):
+    Reminder = temp % 10
+    reverse = (reverse * 10) + Reminder
+    temp = temp //10
+ 
+print("Reverse of a Given number is = %d" %reverse)
+
+if(number == reverse):
+    print("%d is a Palindrome Number" %number)
+else:
+    print("%d is not a Palindrome Number" %number)
